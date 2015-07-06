@@ -1,0 +1,45 @@
+Tests generation for adapting UIs with Tobias
+
+motivation :
+Adapting UIs on numerous platforms
+define UI and Adapting
+high quality software expected
+
+problem :
+tests are essential
+relie on the implementation
+so its a lot of repetitive work
+
+solution :
+we used Tobias that takes charge of the combinatorial
+and allows to abstract JUnit implementations details
+so we could focus on the test itself
+for a test suite, all tests follow same use case
+therefore they share the same logical proceeding
+which can be abstracted
+and then derived for each implementation
+thus reducing the differences between each test
+and using the same approach for each test leaded to use similar implementations
+which could be furthermore shared between tests
+so differences could be minimal, only implementation variation details
+and through Tobias we are able to generate good tests, from scripts that are alike
+next would be to be able to generate these alike-scripts,
+that given abstract use case and implementation variations the whole test suite could be generated
+
+Results :
+similarity in files, variation confinement
+hence generability
+
+Discussion :
+Improving Tobias would allow to write such test generator
+It could be useful for product lines (automatic testing with variation)
+
+
+
+
+Schema :
+Tobias meta-script = abstract use case + implementation variations
+>>>
+Tobias script for each variation
+>>>
+Test code for each variation
