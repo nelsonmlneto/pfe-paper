@@ -33,7 +33,7 @@
 
 \LoadClass[10pt,letterpaper,landscape]{article}[1996/10/31]
 
-\usepackage[french]{babel}
+\usepackage[english]{babel}
 \usepackage{icomma}
 \usepackage[utf8]{inputenc} 
 
