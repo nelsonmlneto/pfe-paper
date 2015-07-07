@@ -1,0 +1,21 @@
+Introduction
+	- context
+	- problem: the repetitive work of writing tests scripts for different versions of the same system
+	- proposal: a tool that generates tests scripts for several contexts from a single higher-level script
+Related Work
+	- ?
+Case Study
+	- explain that is a Smart Home Energy Management System
+	- explain that we developed 4 versions (3 webs and 1 mobile)
+	- list of features
+	- prints of one version.
+UI testing from a higher-level script
+	- approach: to drive the browser as users do and etc (Selenium and Selendroid)
+	- talk about Tobias
+	- tell that we wrote test cases using Tobias for the 4 versions, showing that we can write testes using a higher-level language.
+Proposal
+	- After showing that we can write testes in higher-level language using regular tobias, we explain some changes in TSLT that would 		- make it better and easier.
+Conclusion
+	- Results
+	- Improving Tobias would allow to write such test generator
+	- It could be useful for product lines (automatic testing with variation)
