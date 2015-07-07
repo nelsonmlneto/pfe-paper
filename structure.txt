@@ -1,21 +1,42 @@
+Abstract
+Keywords chosen by the authors
+ACM keywords classification
+
+
 Introduction
-	- context
-	- problem: the repetitive work of writing tests scripts for different versions of the same system
-	- proposal: a tool that generates tests scripts for several contexts from a single higher-level script
+	- Context
+	- Talk about continous integration
+	- Problem: the repetitive work of writing tests scripts for different versions of the same system
+	- Proposal: approach of automatically generate tests scripts for all version from an abstract description
+	- Paragraph explaining next sections 
+
 Related Work
-	- ?
+	- Software Testing
+	- Test Automation (Generation, Execution and Analysis)
+	- UI testing
+	- Tools (Selenium, Selendroid)
+
 Case Study
-	- explain that is a Smart Home Energy Management System
-	- explain that we developed 4 versions (3 webs and 1 mobile)
-	- list of features
-	- prints of one version.
-UI testing from a higher-level script
-	- approach: to drive the browser as users do and etc (Selenium and Selendroid)
-	- talk about Tobias
-	- tell that we wrote test cases using Tobias for the 4 versions, showing that we can write testes using a higher-level language.
-Proposal
-	- After showing that we can write testes in higher-level language using regular tobias, we explain some changes in TSLT that would 		- make it better and easier.
-Conclusion
-	- Results
-	- Improving Tobias would allow to write such test generator
+	- It is a Smart Home Energy Management System
+	- We developed 4 versions (3 webs and 1 mobile)
+	- List of features
+	- Screenshots of 2 version to compare.
+	- What we want to test (test purpose)
+
+Approach: generating test scripts for UI testing from abstract descriptions
+	Principles
+		- Tobias and Combinatorial Testing
+		- The tests scripts for the case study using Tobias
+	Mise en ouvre (Implementation of the Principles - Principles put into Practice)
+		- Show what we did (for each functionality? detailed?)
+	Discussion and Analysis
+		- Quantitative (number of lines of codes)
+		- Qualitative (It's a good idea, limitations and so on)
+
+Conclusion and Perspectivie
+	- Summary (approach and results)
+	- Perspectivies: Our proposal (improvements in tobias, write test cases from a single description)
 	- It could be useful for product lines (automatic testing with variation)
+
+
+
