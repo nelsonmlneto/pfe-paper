@@ -1,3 +1,8 @@
+Questions:
+	- Title
+	- Print in case study
+
+
 Abstract
 Keywords chosen by the authors
 ACM keywords classification
