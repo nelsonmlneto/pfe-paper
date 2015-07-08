@@ -118,24 +118,24 @@ In the case of execution automation, several tools have been developed focusing 
 \begin{figure}
   \begin{center}
   \includegraphics[width=\marginparwidth]{images/web0_goal-filter.eps}
-  \caption{Une figure dans la marge.}
-  \label{fig:marginparsample}
+  \caption{Web version. Number 1 represents the \textbf{goal} feature and number 2 represents the \textbf{filter} feature.}
+  \label{fig:web0print}
   \end{center}  
 \end{figure}
 
 \begin{figure}
   \begin{center}
   \includegraphics[width=\marginparwidth]{images/mobile_goal-filter.eps}
-  \caption{Une figure dans la marge.}
-  \label{fig:marginparsample}
+  \caption{Mobile version. Number 1 represents the \textbf{goal} feature and number 2 represents the \textbf{filter} feature.}
+  \label{fig:mobileprint}
   \end{center}  
 \end{figure}
 
 \begin{figure}
   \begin{center}
-  \includegraphics[width=\marginparwidth]{images/web1-comparator.eps}
-  \caption{Une figure dans la marge.}
-  \label{fig:marginparsample}
+  \includegraphics[width=\marginparwidth]{images/web1_comparator.eps}
+  \caption{Other web version. Number 3 represents the \textbf{comparator} feature.}
+  \label{fig:web1print}
   \end{center}  
 \end{figure}
 }
@@ -153,39 +153,15 @@ The case study used in this work is a prototype for a smart home energy manageme
 It is a prototype because we have developed only the UIs of the system for four versions, three for web environment and one as a mobile application. The data of the system are predetermined. All versions have the same features, except for two web versions that have an additional feature. The differences between the versions are visual. In the case of the mobile application, the UI is adapted to a mobile device, which contains a smaller screen and its own platform for UI development. In the case of the web versions, the UIs have also been developed to this context, using web UI technologies. But the differences between the three web versions are changes in the navigation and UI components. In this paper, we focus on the following features of the prototype:
 
 \begin{enumerate}
-\item \textbf{Goal}: the user can check information about the general energy consumption per month. Having access to the goal and consumption in kWh for the chosen month. 
+\item \textbf{Goal}: the user can check information about the general energy consumption per month. Having access to the goal and consumption in kWh for the chosen month. See \autoref{fig:web0print} and \autoref{fig:mobileprint}.
 
-\item \textbf{Filter}: the user has access to a list of all his or her objects in the house, having the possibility to filter this list per room. An object means any component that can be controlled and whose energy consumption can be registered, such as lights and electronic devices.
+\item \textbf{Filter}: the user has access to a list of all his or her objects in the house, having the possibility to filter this list per room. An object means any component that can be controlled and whose energy consumption can be registered, such as lights and electronic devices. See \autoref{fig:web0print} and \autoref{fig:mobileprint}.
 
-\item \textbf{Comparator}: the user can choose two objects and compare, side by side, their energy consumption charts. This feature is present in only two of the web versions.
+\item \textbf{Comparator}: the user can choose two objects and compare, side by side, their energy consumption charts. This feature is present in only two of the web versions. See \autoref{fig:web1print}
 \end{enumerate} 
 
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{images/web0_goal-filter.eps}
-  \caption{Ajoutez une légende en dessous de chaque image.}
-  \label{fig:sample}
-\end{figure}
+The purpose is to test each feature using execution automation tools for UI testing. For instance Selenium~\cite{selenium} for the web versions and Selendroid~\cite{selendroid} for the mobile version. The approach to test the \textbf{goal} feature is to make these tools to change the current month, interacting with the combobox filter component, and then to verify if the goal and consumed labels have the right value. In the case of the \textbf{filter} feature, the tools have to interact with the filter, changing the current room and verifying if the only correct objects are displayed in the screen. Finally, the \textbf{compator} feature can be tested by using the tools to change the room filter, to chose the objects using the checkbox and to verify if the charts are displayed.
 
-Continuation...
-
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{images/mobile_goal-filter.eps}
-  \caption{Ajoutez une légende en dessous de chaque image.}
-  \label{fig:sample}
-\end{figure}
-
-Continuation...
-
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{images/web1-comparator.eps}
-  \caption{Ajoutez une légende en dessous de chaque image.}
-  \label{fig:sample}
-\end{figure}
-
-Continuation...
 
 % =============================================================================
 \section{Approach: generating test scripts for UI testing from abstract descriptions}
