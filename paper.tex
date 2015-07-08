@@ -108,7 +108,15 @@ This paper is structured as follows. First, the related work is presented, expla
 % =============================================================================
 \section{Related Work}
 % =============================================================================
-TODO
+With the popularity of Continuous Integration (CI), a software engineering practice in which isolated changes are immediately tested and reported on when they are added to a larger code base, the need of test automation has increased. Test automation can be achieved by three ways: the generation of test scripts, their execution and the analysis of the results. The scientific community has developed several approaches and tools for automation of regular and UI testing. Some of them will be presented below.
+
+An example of automation for the generation of test scripts is Tobias~\cite{tobias}, a combinatorial tool that instantiates a large set of test sequences from an abstract description. Combinatorial testing allows to express a large set of test cases in a few lines. Tobias receives the abstract test and generates an executable test code containing several possible combinations of execution, according to the specification of the abstract code given. 
+
+In the case of execution automation, several tools have been developed focusing on UI testing. There are tools that drive the UI as users do, triggering actions, navigating the system and checking the UI content. For instance, tools for web~\cite{watir, cucumber} and mobile~\cite{appium, selendroid} environments are responsible for interacting with the UI according to the scripts written by the testers. Besides, there are tools~\cite{selenium, monkeytalk} that are also able to generate test scripts, through the process of record and playback. The user interacts with the system, the tool records the actions, thus generating a test script that can be used thereafter for execution automation.
+
+Another interesting approach, proposed in~\cite{test-image-comparison-korea}, uses the idea of record and playblack with the automation of the analysis of the results through image comparison. In this solution, after the execution of a test script, the image of the UI is recorded. It can be used later to verify if changes in the system affected the UI, comparing automatically the old and new images of the UI.
+ 
+Another related work, presented in~\cite{ui-equilavance-raquel}, is not strictly about testing, but comparing UIs of the same system that are adapted to different contexts. In this approach, the UIs are abstracted to formal models based on graphs and the abstractions can be automatically compared, verifying if  they have the same capabilities and appearance.
 
 % =============================================================================
 \section{Case Study}
