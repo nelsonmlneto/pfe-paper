@@ -121,28 +121,38 @@ TODO
 \subsection{Discussion and Analysis}
 Firstly, the number of lines to write for tests have been at least halved, as Table \ref{table:scriptssize} shows it.
 \begin{table}
-\begin{tabular}{l l r r r r}
-			&					&	mobile	&	web0	&	web1	&	web2	\\
+\begin{tabular}{|l l|r r r r|}
+\hline
+test		&	implementation&	mobile	&	web0	&	web1	&	web2	\\
+\hline
 goal		&	plain Java	&	161		&	143		&	151		&	147		\\
 			&	with Tobias	&	76		&	67		&	69		&	68		\\
+\hline
 filter		&	plain Java	&	/		&	350		&	402		&	369		\\
 			&	with Tobias	&	/		&	88		&	93		&	92		\\
+\hline
 compare	&	plain Java	&	/		&	/		&	235		&	227		\\
-			&	with Tobias	&	/		&	/		&	59		&	58
+			&	with Tobias	&	/		&	/		&	59		&	58		\\
+\hline
 \end{tabular}
 \caption{Comparison of number of lines for various functionalities and various versions for Tobias script and its generated test}
 \label{table:scriptssize}
 \end{table}
 Secondly, the logical structure of the various tests for a same functionality and version is shared, and so the differences between these files are very localized : in the header of the file (preferences for the test) and in the implementations of the abstract groups (version details). So there is little variation from a shared abstract script for each file, as can be seen in Table \ref{table:scripts-similarity}.
 \begin{table}
-\begin{tabular}{l l r r r}
-			&			&	shared	&	total	&	\%	\\
+\begin{tabular}{|l l|r r r|}
+\hline
+test		&	version&	shared	&	total	&	\%	\\
+\hline
 goal		&	mobile	&	48		&	76		&	63	\\
 			&	web0	&	65		&	67		&	97	\\
 			&	web2	&	65		&	68		&	95	\\
+\hline
 filter		&	web0	&	78		&	88		&	88	\\
 			&	web2	&	89		&	92		&	96	\\
-compare	&	web2	&	55		&	58		&	94
+\hline
+compare	&	web2	&	55		&	58		&	94 \\
+\hline
 \end{tabular}
 \caption{Comparison of number of shared lines between Tobias scripts and version web1 for a same functionality}
 \label{table:scripts-similarity}
